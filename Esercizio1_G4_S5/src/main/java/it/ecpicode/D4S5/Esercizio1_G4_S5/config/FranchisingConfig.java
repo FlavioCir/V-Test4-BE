@@ -4,21 +4,19 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-import it.ecpicode.D4S5.Esercizio1_G4_S5.entity.Pizza;
+import it.ecpicode.D4S5.Esercizio1_G4_S5.entity.Franchising;
 
 @Configuration
 @PropertySource("classpath:application.properties")
-public class PizzaConfig {
+public class FranchisingConfig {
 
 	@Bean
-	public Pizza p1() {
-		Pizza p = new Pizza();
-		p.setNome("Pizza margherita");
-		p.setIngredienti("pomodoro, mozzarella");
-		p.setCalorie(1100);
-		p.setPrezzo(5.80);
+	public Franchising f1() {
+		Franchising f = new Franchising();
+		f.setNome("Portachiavi");
+		f.setPrezzo(3.00);
 		
-		return p;
+		return f;
 	}
 	
 }

@@ -4,21 +4,20 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
-import it.ecpicode.D4S5.Esercizio1_G4_S5.entity.Pizza;
+import it.ecpicode.D4S5.Esercizio1_G4_S5.entity.Bevanda;
 
 @Configuration
 @PropertySource("classpath:application.properties")
-public class PizzaConfig {
+public class BevandaConfig {
 
 	@Bean
-	public Pizza p1() {
-		Pizza p = new Pizza();
-		p.setNome("Pizza margherita");
-		p.setIngredienti("pomodoro, mozzarella");
-		p.setCalorie(1100);
-		p.setPrezzo(5.80);
+	public Bevanda b1() {
+		Bevanda b = new Bevanda();
+		b.setNome("Coca cola");
+		b.setCalorie(400);
+		b.setPrezzo(2.50);
 		
-		return p;
+		return b;
 	}
 	
 }

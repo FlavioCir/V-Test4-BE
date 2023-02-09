@@ -23,7 +23,7 @@ import lombok.ToString;
 
 @Entity
 @Table(name = "prodotti")
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.JOINED)
 @Getter
 @Setter
 @NoArgsConstructor

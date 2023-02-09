@@ -13,6 +13,7 @@ public class PizzaService {
 	
 	public void insertPizza(Pizza p) {
 		pizzaRepo.save(p);
+		System.out.println("Pizza inserita correttamente!");
 	}
 	
 }
